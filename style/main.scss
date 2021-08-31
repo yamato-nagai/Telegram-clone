@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1550px;
+    margin: 0 auto;
+    font-family: 'poppins' Arial, Helvetica, sans-serif;
+    background-color: #e4e3e3;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    position: relative;
+    .top{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        position: fixed;
+        background-color: #ffffff;
+        width: 40%;
+        top: 0;
+        .burger{
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background-color: #c2bebe;
+            border-radius: 5px;
+            color: #fff;
+        }
+    }
+    .chats{
+        display: flex;
+        flex-direction: column;
+        margin-top: 54px;
+        .profile{
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.2s;
+            padding: 10px;
+            &:hover{
+                background-color: rgba($color: transparent, $alpha: 0.1);
+            }
+            .profile-info{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .img{
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                &__details{
+                    .name{
+                        font-size: 17px;
+                        letter-spacing: 0.5px;
+                        color: #000;
+                    }
+                    .message{
+                        margin-top: 5px;
+                        color: #707579;
+                        .white{
+                            color: #000;
+                        }
+                        &_blue{
+                            color: #0da6ff;
+                        }
+                    }
+                }
+            }
+            .profile-date{
+                h5{
+                    color: #000;
+                    line-height: 24px;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .section{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+        height: 100%;
+        width: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.2s;
+        .my-info{
+            padding: 15px;
+            background-color: #063e7e;
+            .photo{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .img{
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 45px;
+                &__name{
+                    color: #fff;
+                }
+                &__number{
+                    color: #fff;
+                }
+                .close-section{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    svg{
+                        transform: rotate(270deg);
+                    }
+                }
+            }
+        }
+        .nav{
+            margin-top: 15px;
+            list-style: none;
+            .nav-list{
+                padding: 8px 8px 8px 32px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: #cecece;
+                }
+                &__item{
+                    text-decoration: none;
+                    align-items: center;
+                    font-size: 18px;
+                    display: flex;
+                    color: #000;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+.right{
+    background-color: #f2f2f2;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    .text{
+        padding:5px 10px;
+        border-radius: 12px;
+        background-color:rgba($color: #e5e5e5, $alpha: 0.3);
+        color: #000;
+    }
+    .click{
+        height: 100%;
+        width: 100%;
+        display: none;
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f2f2f2;
+            &__profile-name{
+                color: #000;
+            }
+            &__text{
+                color: #000;
+            } 
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }  
+            .modi{
+                color: #00a2ff;
+            }     
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            background-color: #f2f2f2;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            .healper{
+                position: relative;
+                width: 100%;
+                align-items: center;
+                display: flex;
+            }
+            .attachment{
+                transform: rotate(140deg);
+                left: 7px;
+                position: absolute;
+            }
+            .emodji{
+                position: absolute;
+                right: 57px;
+            }
+            .send{
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                right: 9px;
+            }
+            .input{
+                width: 100%;
+                padding: 15px;
+                background-color: #e2e2e2;
+                border: none;
+                outline: none;
+                color: #000;
+                padding: 15px 100px 15px 50px;
+            }
+        }
+    }
+
+}

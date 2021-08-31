@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+  font-family: 'poppins' Arial, Helvetica, sans-serif;
+  background-color: #e4e3e3;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left {
+  width: 40%;
+  position: relative;
+}
+
+.left .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  background-color: #ffffff;
+  width: 40%;
+  top: 0;
+}
+
+.left .top .burger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.left .top .input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #c2bebe;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.left .chats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 54px;
+}
+
+.left .chats .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 10px;
+}
+
+.left .chats .profile:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left .chats .profile .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.left .chats .profile .profile-info .img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.left .chats .profile .profile-info__details .name {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.left .chats .profile .profile-info__details .message {
+  margin-top: 5px;
+  color: #707579;
+}
+
+.left .chats .profile .profile-info__details .message .white {
+  color: #000;
+}
+
+.left .chats .profile .profile-info__details .message_blue {
+  color: #0da6ff;
+}
+
+.left .chats .profile .profile-date h5 {
+  color: #000;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.left .section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.left .section .my-info {
+  padding: 15px;
+  background-color: #063e7e;
+}
+
+.left .section .my-info .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .section .my-info .photo .img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.left .section .my-info .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 45px;
+}
+
+.left .section .my-info .bottom__name {
+  color: #fff;
+}
+
+.left .section .my-info .bottom__number {
+  color: #fff;
+}
+
+.left .section .my-info .bottom .close-section {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.left .section .my-info .bottom .close-section svg {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.left .section .nav {
+  margin-top: 15px;
+  list-style: none;
+}
+
+.left .section .nav .nav-list {
+  padding: 8px 8px 8px 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.left .section .nav .nav-list:hover {
+  background-color: #cecece;
+}
+
+.left .section .nav .nav-list__item {
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  gap: 20px;
+}
+
+.right {
+  background-color: #f2f2f2;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  right: 0;
+  height: 100%;
+}
+
+.right .text {
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: rgba(229, 229, 229, 0.3);
+  color: #000;
+}
+
+.right .click {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.right .click .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.right .click .header__profile-name {
+  color: #000;
+}
+
+.right .click .header__text {
+  color: #000;
+}
+
+.right .click .header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.right .click .header .modi {
+  color: #00a2ff;
+}
+
+.right .click .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.right .click .footer .healper {
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right .click .footer .attachment {
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+  left: 7px;
+  position: absolute;
+}
+
+.right .click .footer .emodji {
+  position: absolute;
+  right: 57px;
+}
+
+.right .click .footer .send {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 9px;
+}
+
+.right .click .footer .input {
+  width: 100%;
+  padding: 15px;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 15px 100px 15px 50px;
+}
+/*# sourceMappingURL=main.css.map */
